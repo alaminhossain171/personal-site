@@ -1,9 +1,12 @@
-import React from 'react'
+import { Container } from "react-bootstrap";
+import Banner from "../components/Banner";
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <Container>
+      <Banner />
+    </Container>
+  );
 }
 
-export default Home
+export default Home;

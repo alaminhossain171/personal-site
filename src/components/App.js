@@ -3,6 +3,7 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Home from "../pages/Home";
 import Projects from "../pages/Projects";
+import "../styles/Responsive.css";
 import "../styles/styles.css";
 import Footer from "./Footer";
 import Header from "./Header";

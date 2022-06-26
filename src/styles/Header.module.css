@@ -1,3 +1,9 @@
 .Header {
     background-color: #0A192F;
 }
+
+.activeHeader {
+    border-top: 1px solid #64FFB9;
+    border-width: 0.5px;
+
+}

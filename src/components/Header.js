@@ -1,15 +1,24 @@
 import { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 import Styles from "../styles/Header.module.css";
+import { useTheme } from "./../context/ThemeContext";
 function Header() {
   const [active, setActive] = useState("Home");
+  const { isDarkMode, toggleDarkMode } = useTheme();
+
   return (
     <>
-      <Navbar className={Styles.header} expand="lg">
+      <Navbar
+        className={isDarkMode ? Styles.HeaderLight : Styles.HeaderDark}
+        expand="lg"
+      >
         <Container>
           <Navbar.Brand as={NavLink} to="/">
-            <h1>A</h1>
+            <h1 style={isDarkMode ? { color: "black" } : { color: "white" }}>
+              A
+            </h1>
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
@@ -23,8 +32,12 @@ function Header() {
                 to="/"
                 className={
                   active === "Home"
-                    ? `mx-sm-0 mx-md-2 text-light ${Styles.activeHeader}`
-                    : `mx-sm-0 mx-md-2 text-light`
+                    ? `mx-sm-0 mx-md-2 ${
+                        isDarkMode ? "lightColor" : "darkColor"
+                      } ${Styles.activeHeader}`
+                    : `mx-sm-0 mx-md-2  ${
+                        isDarkMode ? "lightColor" : "darkColor"
+                      }`
                 }
               >
                 Home
@@ -35,8 +48,12 @@ function Header() {
                 to="/about"
                 className={
                   active === "About"
-                    ? `mx-sm-0 mx-md-2 text-light ${Styles.activeHeader}`
-                    : `mx-sm-0 mx-md-2 text-light`
+                    ? `mx-sm-0 mx-md-2  ${
+                        isDarkMode ? "lightColor" : "darkColor"
+                      } ${Styles.activeHeader}`
+                    : `mx-sm-0 mx-md-2  ${
+                        isDarkMode ? "lightColor" : "darkColor"
+                      }`
                 }
               >
                 About
@@ -47,8 +64,12 @@ function Header() {
                 to="/projects"
                 className={
                   active === "Projects"
-                    ? `mx-sm-0 mx-md-2 text-light ${Styles.activeHeader}`
-                    : `mx-sm-0 mx-md-2 text-light`
+                    ? `mx-sm-0 mx-md-2  ${
+                        isDarkMode ? "lightColor" : "darkColor"
+                      } ${Styles.activeHeader}`
+                    : `mx-sm-0 mx-md-2  ${
+                        isDarkMode ? "lightColor" : "darkColor"
+                      }`
                 }
               >
                 Projects
@@ -59,17 +80,27 @@ function Header() {
                 to="/contact"
                 className={
                   active === "Contact"
-                    ? `mx-sm-0 mx-md-2 text-light ${Styles.activeHeader}`
-                    : `mx-sm-0 mx-md-2 text-light`
+                    ? `mx-sm-0 mx-md-2  ${
+                        isDarkMode ? "lightColor" : "darkColor"
+                      } ${Styles.activeHeader}`
+                    : `mx-sm-0 mx-md-2  ${
+                        isDarkMode ? "lightColor" : "darkColor"
+                      }`
                 }
               >
                 Contact
               </Nav.Link>
               <Nav.Link
                 style={{ boxShadow: "none" }}
-                className={`btn btn-info secondary mx-sm-0 mx-md-2 text-dark `}
+                className={` d-flex justify-content-center align-items-center`}
               >
-                Resume
+                <DarkModeSwitch
+                  moonColor="gray"
+                  sunColor="gold"
+                  checked={isDarkMode}
+                  onChange={toggleDarkMode}
+                  size={20}
+                />
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

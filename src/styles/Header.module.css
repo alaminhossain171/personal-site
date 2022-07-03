@@ -1,5 +1,9 @@
-.Header {
+.HeaderDark {
     background-color: #0A192F;
+}
+
+.HeaderLight {
+    background-color: #FFFFFF;
 }
 
 .activeHeader {

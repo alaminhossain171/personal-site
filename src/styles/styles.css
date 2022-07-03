@@ -6,16 +6,26 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+
+}
+
+.lightColor {
+    color: black !important;
+}
+
+.darkColor {
+    color: white !important;
+}
+
+.darkMode {
+    min-height: 100vh;
     background-color: #0A192F;
     color: white;
 }
 
-h1 {
-    color: white;
-}
-
-.nav-link {
-    border-top: 1px solid #0A192F;
-    border-width: 0.5px;
-
+.lightMode {
+    min-height: 100vh;
+    background-color: #F3F6F9;
+    color: black;
 }

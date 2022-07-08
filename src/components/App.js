@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Home from "../pages/Home";
 import Projects from "../pages/Projects";
@@ -13,7 +12,7 @@ import Header from "./Header";
 import Layout from "./Layout";
 
 function App() {
-  const { isDarkMode, toggleDarkMode } = useTheme();
+  const { isDarkMode } = useTheme();
   return (
     <Router>
       <div className={isDarkMode ? "lightMode" : "darkMode"}>
@@ -25,9 +24,7 @@ function App() {
               <Home />
             </Route>
 
-            <Route path={"/about"} exact>
-              <About />
-            </Route>
+          
 
             <Route path={"/projects"} exact>
               <Projects />

@@ -10,8 +10,8 @@ function BannerLeftContent() {
           {" "}
           {`<>Al Amin</>`};
         </span>
-        I build things for the web. Currently, I am working as a Software
-        Engineer @ TFP Solution LTD, a software firm. I Love writing clean and
+        I build things for the web and mobile. Currently, I am working as a Software
+        Engineer @ <u> TFP Solution Ltd, Bangladesh</u> , a software firm. I Love writing clean and
         maintainable code for web and mobile applications, passionate about
         learning and exploring new technologies as well enthusiastic about
         UI/UX. As of my hobbies, I prefer reading books, travel, and listen to

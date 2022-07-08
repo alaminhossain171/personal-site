@@ -9,7 +9,7 @@ function Header() {
   const { isDarkMode, toggleDarkMode } = useTheme();
 
   return (
-    <>
+    <div className="sticky-top">
       <Navbar
         className={isDarkMode ? Styles.HeaderLight : Styles.HeaderDark}
         expand="lg"
@@ -40,24 +40,9 @@ function Header() {
                       }`
                 }
               >
-                Home
+                It's Al Amin
               </Nav.Link>
-              <Nav.Link
-                onClick={() => setActive("About")}
-                as={NavLink}
-                to="/about"
-                className={
-                  active === "About"
-                    ? `mx-sm-0 mx-md-2  ${
-                        isDarkMode ? "lightColor" : "darkColor"
-                      } ${Styles.activeHeader}`
-                    : `mx-sm-0 mx-md-2  ${
-                        isDarkMode ? "lightColor" : "darkColor"
-                      }`
-                }
-              >
-                About
-              </Nav.Link>
+
               <Nav.Link
                 onClick={() => setActive("Projects")}
                 as={NavLink}
@@ -106,7 +91,7 @@ function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </>
+    </div>
   );
 }
 

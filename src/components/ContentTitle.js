@@ -1,10 +1,9 @@
-
-function ContentTitle({title}) {
+function ContentTitle({ title }) {
   return (
-    <div>
-    <h4>{title}</h4>
-</div>
-  )
+    <div className="my-2">
+      <h4>{title}</h4>
+    </div>
+  );
 }
 
-export default ContentTitle
+export default ContentTitle;

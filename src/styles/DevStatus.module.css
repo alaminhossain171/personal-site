@@ -1,5 +1,5 @@
 .CardBg {
-  
+
     background: rgba(74, 144, 226, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(9px);
@@ -9,4 +9,8 @@
     cursor: pointer;
 
 
+}
+
+.statusContainer {
+    border-right: 1px solid #D0DCF2;
 }

@@ -11,6 +11,12 @@
     .sm-text {
         text-align: center;
     }
+    .status-border{
+        border-right: none !important;
+        border-bottom: 1px solid #D0DCF2;
+       margin: 0 5%;
+       padding: 10px 0 10px 0;
+    }
 
 }
 
@@ -20,6 +26,12 @@
     .sm-text {
         text-align: center;
     }
+    .status-border{
+        border-right: none !important;
+        border-bottom: 1px solid #D0DCF2;
+        margin: 0 5%;
+        padding: 10px 0 10px 0;
+    }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -27,5 +39,11 @@
     /* Even Smaller devices */
     .sm-text {
         text-align: center;
+    }
+    .status-border{
+        border-right: none !important;
+        border-bottom: 1px solid #D0DCF2;
+        margin: 0 5%;
+        padding: 10px 0 10px 0;
     }
 }

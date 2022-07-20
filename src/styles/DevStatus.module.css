@@ -14,3 +14,7 @@
 .statusContainer {
     border-right: 1px solid #D0DCF2;
 }
+
+.statusIcon{
+    opacity: 0.2;
+}

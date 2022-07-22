@@ -1,6 +1,7 @@
 import ContentTitle from "../components/ContentTitle";
 import SkillCard from "../components/SkillCard";
 import data from "../DB/Skills";
+
 function Skills() {
   return (
     <>

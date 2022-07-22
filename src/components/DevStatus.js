@@ -15,24 +15,24 @@ export default function DevStatus() {
           <Status
             icon={<BiCodeAlt size={30} className={Styles.statusIcon} />}
             name="Projects"
-            count="25+"
+            count={25}
           />
           <Status
             icon={<BsGithub size={30} className={Styles.statusIcon} />}
             name="Commits"
-            count="3000+"
+            count={3000}
           />
           <Status
             icon={
               <RiUserSettingsLine size={30} className={Styles.statusIcon} />
             }
             name="Year Experience"
-            count="1.5+"
+            count={1.3}
           />
           <Status
             icon={<BsBookmarkCheck size={30} className={Styles.statusIcon} />}
             name="Blog reach"
-            count="20+"
+            count={20}
             lastChild={true}
           />
         </div>

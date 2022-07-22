@@ -21,17 +21,15 @@ function App() {
         <Layout>
           <Switch>
             <Route path={"/"} exact>
-              <Home />
+              <Home title="Home | Page" />
             </Route>
 
-          
-
             <Route path={"/projects"} exact>
-              <Projects />
+              <Projects title="Projects | Page" />
             </Route>
 
             <Route path={"/contact"} exact>
-              <Contact />
+              <Contact title="Contact | Page" />
             </Route>
           </Switch>
         </Layout>

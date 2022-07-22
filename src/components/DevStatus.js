@@ -10,7 +10,7 @@ export default function DevStatus() {
   return (
     <div className="mt-4">
       <ContentTitle title={"My Dev Stats"} />
-      <div className={`card my-3 ${Styles.CardBg}`}>
+      <div className={`card my-3 CardBg`}>
         <div className={`row my-2`}>
           <Status
             icon={<BiCodeAlt size={30} className={Styles.statusIcon} />}

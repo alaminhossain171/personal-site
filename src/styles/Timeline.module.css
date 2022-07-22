@@ -1,0 +1,9 @@
+
+.timeLineActivity{
+    width: 1px;
+    background-color: #d0dcf233;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top:0
+}

@@ -1,49 +1,78 @@
 /* =Responsive Structure
 ----------------------------------------------- */
 @media (max-width: 800px) {
-    /* Smaller Resolution Desktops and Laptops */
-
+  /* Smaller Resolution Desktops and Laptops */
 }
 
 @media (max-width: 650px) {
+  /* Smaller devices */
+  .sm-text {
+    text-align: center;
+  }
+  .status-border {
+    border-right: none !important;
+    border-bottom: 1px solid #d0dcf233;
+    margin: 0 5%;
+    padding: 10px 0 10px 0;
+  }
+  .timeline-header {
+    display: flex;
+  }
 
-    /* Smaller devices */
-    .sm-text {
-        text-align: center;
-    }
-    .status-border{
-        border-right: none !important;
-        border-bottom: 1px solid #D0DCF2;
-       margin: 0 5%;
-       padding: 10px 0 10px 0;
-    }
-
+  .btn-res {
+    width: 99% !important;
+    margin-bottom: 20px;
+    margin-left: 1px;
+  }
+  .display-sm {
+    display: none;
+  }
 }
 
 @media (max-width: 450px) {
+  /* Even Smaller devices */
+  .sm-text {
+    text-align: center;
+  }
+  .status-border {
+    border-right: none !important;
+    border-bottom: 1px solid #d0dcf233;
+    margin: 0 5%;
+    padding: 10px 0 10px 0;
+  }
+  .timeline-header {
+    display: flex;
+  }
 
-    /* Even Smaller devices */
-    .sm-text {
-        text-align: center;
-    }
-    .status-border{
-        border-right: none !important;
-        border-bottom: 1px solid #D0DCF2;
-        margin: 0 5%;
-        padding: 10px 0 10px 0;
-    }
+  .btn-res {
+    width: 99% !important;
+    margin-bottom: 20px;
+  }
+  .display-sm {
+    display: none;
+  }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Even Smaller devices */
+  .sm-text {
+    text-align: center;
+  }
+  .status-border {
+    border-right: none !important;
+    border-bottom: 1px solid #d0dcf233;
+    margin: 0 5%;
+    padding: 10px 0 10px 0;
+  }
+  .timeline-header {
+    display: flex;
+  }
 
-    /* Even Smaller devices */
-    .sm-text {
-        text-align: center;
-    }
-    .status-border{
-        border-right: none !important;
-        border-bottom: 1px solid #D0DCF2;
-        margin: 0 5%;
-        padding: 10px 0 10px 0;
-    }
+  .btn-res {
+    width: 99% !important;
+    margin-bottom: 20px;
+  }
+  .display-sm {
+    display: none;
+  }
 }

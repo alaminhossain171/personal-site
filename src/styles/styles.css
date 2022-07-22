@@ -1,31 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500;800&family=Montserrat:wght@200;300;400;500;600&display=swap");
 html {
-    scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 .lightColor {
-    color: black !important;
+  color: black !important;
 }
 
 .darkColor {
-    color: white !important;
+  color: white !important;
 }
 
 .darkMode {
-    min-height: 100vh;
-    background-color: #0A192F;
-    color: white;
+  min-height: 100vh;
+  background-color: #0a192f;
+  color: white;
 }
 
 .lightMode {
-    min-height: 100vh;
-    background-color: #F3F6F9;
-    color: black;
+  min-height: 100vh;
+  background-color: #f3f6f9;
+  color: black;
+}
+.CardBg {
+  background: rgba(74, 144, 226, 0.25);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px); */
+  border-radius: 5px;
+  /* text-shadow: 2px 0px 3px #54547983; */
+  /* cursor: pointer; */
+}
+.work-details span {
+  letter-spacing: 2px;
+  line-height: 2px;
+}
+.left-content-font {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
 }

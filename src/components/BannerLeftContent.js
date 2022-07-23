@@ -29,8 +29,8 @@ function BannerLeftContent() {
           prefer reading books, travel, and listen to music.
         </p>
 
-        <button className={`btn btn-outline-info my-3`}>See my CV</button>
-        <button className={`btn btn-outline-info my-3 mx-2`}>
+        <button className={`btn btn-outline-primary my-3`}>See my CV</button>
+        <button className={`btn btn-outline-primary my-3 mx-2`}>
           Get in Touch
         </button>
       </div>

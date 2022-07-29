@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import DevStatus from "../components/DevStatus";
 import HomeProjects from "../components/HomeProjects";
 import Skills from "../components/Skills";
+import Thoughts from "../components/Thoughts";
 import Timeline from "../components/Timeline";
 
 function Home({ title }) {
@@ -18,6 +19,7 @@ function Home({ title }) {
       <DevStatus />
       <Timeline />
       <HomeProjects />
+      <Thoughts />
     </Container>
   );
 }

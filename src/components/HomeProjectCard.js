@@ -5,7 +5,7 @@ export default function HomeProjectCard({ title, details, technology }) {
   return (
     <>
       {" "}
-      <div className="card CardBg p-2">
+      <div className="card CardBg p-2 w-100">
         <div className="card-head d-flex flex-row justify-content-end">
           <a href="/">
             <div

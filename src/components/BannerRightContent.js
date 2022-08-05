@@ -2,7 +2,7 @@ import alaminimg from "../assets/alamin-dev.png";
 import Styles from "../styles/BannerRightContent.module.css";
 function BannerRightContent() {
   return (
-    <div className={Styles.imgParent}>
+    <div className={`${Styles.imgParent}`}>
       <img
         src={alaminimg}
         alt="Logo"

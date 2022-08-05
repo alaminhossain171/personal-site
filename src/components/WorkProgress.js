@@ -5,7 +5,7 @@ function WorkProgress({ title }) {
     <>
       <p className="my-1 work-details left-content-font">
         <span>
-          <IoIosArrowDroprightCircle size={20} color="gray" />
+          <IoIosArrowDroprightCircle size={20} color="#0DCAF0" />
         </span>
         <span className="mx-2" style={{ fontSize: "13px" }}>
           {title}

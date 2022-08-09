@@ -1,13 +1,12 @@
 .HeaderDark {
-    background-color: #0A192F;
+  background-color: #111a28;
 }
 
 .HeaderLight {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .activeHeader {
-    border-top: 1px solid #64FFB9;
-    border-width: 0.5px;
-
+  border-top: 1px solid #64ffb9;
+  border-width: 0.5px;
 }

@@ -16,9 +16,11 @@ function Header() {
       >
         <Container>
           <Navbar.Brand as={NavLink} to="/">
-            <h1 style={isDarkMode ? { color: "black" } : { color: "white" }}>
-              A
-            </h1>
+            <div class="wrapper">
+              <div class="circle">
+                <span id="text">A</span>
+              </div>
+            </div>
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"

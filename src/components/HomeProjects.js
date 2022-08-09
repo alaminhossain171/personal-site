@@ -14,12 +14,13 @@ export default function HomeProjects() {
               return (
                 <div
                   key={item.id}
-                  className="col-sm-12 col-md-4 col-lg-4 mb-4 d-flex align-items-stretch"
+                  className="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
                 >
                   <HomeProjectCard
                     title={item.title}
                     details={item.details}
                     technology={item.technology}
+                    url={item.url}
                   />
                 </div>
               );

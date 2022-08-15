@@ -1,9 +1,9 @@
 .imgParent {
-    height: 230px;
-    width: 230px;
-    border-radius: 50%;
-    display: "flex";
-    justify-content: "center";
-    align-items: "center";
-    border: 2px solid lightseagreen;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  display: "flex";
+  justify-content: "center";
+  align-items: "center";
+  border: 2px solid lightseagreen;
 }

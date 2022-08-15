@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Josefin+Sans:wght@200;300;400;500;700&family=League+Spartan:wght@200;300;400;500;800&family=Montserrat:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300&family=Plus+Jakarta+Sans:wght@600;800&display=swap");
 
 html {
   scroll-behavior: smooth !important;
@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .lightColor {
@@ -16,18 +16,18 @@ body {
 }
 
 .darkColor {
-  color: white !important;
+  color: #f3f6f9 !important;
 }
 
 .darkMode {
   min-height: 100vh;
   background-color: #111a28;
-  color: white;
+  color: #f3f6f9;
 }
 
 .lightMode {
   min-height: 100vh;
-  background-color: #fff;
+  background-color: #f3f6f9;
   color: black;
 }
 .CardBg {
@@ -81,9 +81,9 @@ body {
   border-radius: 100%;
   width: 30px;
   height: 30px;
-  border: 1px solid #32aaee;
+  border: 1px solid #006fde;
 
-  box-shadow: 0px 5px 5px #32aaee;
+  /* box-shadow: 2px 2px 2px #006fde; */
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -91,5 +91,5 @@ body {
 }
 #text {
   font-weight: solid;
-  color: #32aaee;
+  color: #006fde;
 }

@@ -1,12 +1,18 @@
 .HeaderDark {
-  background-color: #111a28;
+  background-color: #0b1322;
+  border-bottom: 0.5px solid #1d2533;
 }
 
 .HeaderLight {
   background-color: #ffffff;
+  border-bottom: 0.5px solid #eaeef2;
 }
 
-.activeHeader {
-  border-top: 1px solid #64ffb9;
-  border-width: 0.5px;
+.activeHeaderDark {
+  background-color: #1f2937;
+  border-radius: 5px;
+}
+.activeHeaderLight {
+  background-color: #f3f6f9;
+  border-radius: 5px;
 }

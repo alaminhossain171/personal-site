@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { CgCloseO, CgMenuRound } from "react-icons/cg";
 import { NavLink } from "react-router-dom";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import Styles from "../styles/Header.module.css";
@@ -7,6 +8,7 @@ import { useTheme } from "./../context/ThemeContext";
 function Header() {
   const [active, setActive] = useState("Home");
   const { isDarkMode, toggleDarkMode } = useTheme();
+  const [menu, setMenu] = useState(false);
 
   return (
     <div className="sticky-top">
@@ -16,16 +18,23 @@ function Header() {
       >
         <Container>
           <Navbar.Brand as={NavLink} to="/">
-            <div class="wrapper">
+            <div class="wrapper d-flex  align-items-center">
               <div class="circle">
                 <span id="text">A</span>
               </div>
             </div>
           </Navbar.Brand>
           <Navbar.Toggle
+            onClick={() => setMenu(!menu)}
             aria-controls="basic-navbar-nav"
-            style={{ boxShadow: "none", border: "none", background: "white" }}
-          />
+            style={{ border: 0, boxShadow: "none" }}
+          >
+            {!menu ? (
+              <CgMenuRound color="gray" size={27} />
+            ) : (
+              <CgCloseO color="gray" size={26} />
+            )}
+          </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto align-items-center">
               <Nav.Link
@@ -34,15 +43,19 @@ function Header() {
                 to="/"
                 className={
                   active === "Home"
-                    ? `mx-sm-0 mx-md-2 ${
-                        isDarkMode ? "lightColor" : "darkColor"
-                      } ${Styles.activeHeader}`
-                    : `mx-sm-0 mx-md-2  ${
+                    ? `mx-sm-0 mx-md-2 fw-bold d-flex justify-content-center align-items-center ${
+                        isDarkMode ? "lightColor " : "darkColor"
+                      } ${
+                        isDarkMode
+                          ? Styles.activeHeaderLight
+                          : Styles.activeHeaderDark
+                      }`
+                    : `mx-sm-0 mx-md-2 d-flex justify-content-center align-items-center  ${
                         isDarkMode ? "lightColor" : "darkColor"
                       }`
                 }
               >
-                It's Al Amin
+                <small>It's Al Amin</small>
               </Nav.Link>
 
               <Nav.Link
@@ -51,15 +64,19 @@ function Header() {
                 to="/projects"
                 className={
                   active === "Projects"
-                    ? `mx-sm-0 mx-md-2  ${
+                    ? `mx-sm-0 mx-md-2  fw-bold d-flex justify-content-center align-items-center ${
                         isDarkMode ? "lightColor" : "darkColor"
-                      } ${Styles.activeHeader}`
-                    : `mx-sm-0 mx-md-2  ${
+                      } ${
+                        isDarkMode
+                          ? Styles.activeHeaderLight
+                          : Styles.activeHeaderDark
+                      }`
+                    : `mx-sm-0 mx-md-2 d-flex justify-content-center align-items-center ${
                         isDarkMode ? "lightColor" : "darkColor"
                       }`
                 }
               >
-                Projects
+                <small> Projects</small>
               </Nav.Link>
               <Nav.Link
                 onClick={() => setActive("Contact")}
@@ -67,15 +84,19 @@ function Header() {
                 to="/contact"
                 className={
                   active === "Contact"
-                    ? `mx-sm-0 mx-md-2  ${
+                    ? `mx-sm-0 mx-md-2 fw-bold d-flex justify-content-center align-items-center ${
                         isDarkMode ? "lightColor" : "darkColor"
-                      } ${Styles.activeHeader}`
-                    : `mx-sm-0 mx-md-2  ${
+                      } ${
+                        isDarkMode
+                          ? Styles.activeHeaderLight
+                          : Styles.activeHeaderDark
+                      }`
+                    : `mx-sm-0 mx-md-2 d-flex justify-content-center align-items-center  ${
                         isDarkMode ? "lightColor" : "darkColor"
                       }`
                 }
               >
-                Contact
+                <small>Contact</small>
               </Nav.Link>
               <Nav.Link
                 style={{ boxShadow: "none" }}

@@ -24,6 +24,12 @@ body {
   background-color: #111a28;
   color: #f3f6f9;
 }
+.darkBg{
+  background-color: #111a28;
+}
+.lightBg{
+  background-color: #f3f6f9;
+}
 
 .lightMode {
   min-height: 100vh;
@@ -79,8 +85,8 @@ body {
 }
 .circle {
   border-radius: 100%;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border: 1px solid #005bb5;
 
   /* box-shadow: 2px 2px 2px #005BB5; */

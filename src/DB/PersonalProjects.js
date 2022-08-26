@@ -1,9 +1,14 @@
 import ecommerce from "../assets/projects/ecommerce.png";
+import quiz from "../assets/projects/quiz.png"
+import Sentence from '../assets/projects/Sentence.png'
+import cofee from '../assets/projects/Coffee.png'
+import profilefind from '../assets/projects/ProgileFinder.png'
+import Resturant from '../assets/projects/Restarunt.png'
 const data = [
   {
     id: 0,
     name: "Quiz App",
-    img: "https://alamin-cse.netlify.app/img/portfolio/large/project-1/1.png",
+    img: quiz,
     brief:
       "A Quiz app which takes quiz on basic javascript question. (Ref: Learn with sumit yt)",
     tech: ["HTML", "CSS", "Vanila JS", "Bootstrap"],
@@ -13,7 +18,7 @@ const data = [
   {
     id: 1,
     name: "Sentence Detector App",
-    img: "https://alamin-cse.netlify.app/img/portfolio/large/project-1/1.png",
+    img:Sentence,
     brief:
       "This is Javascript project. This project can detect your voice and it calculate how many article, vowel, consonant, preparation, interjection, digit, space in a sentence. It also able to support manual input.",
     tech: ["HTML", "CSS", "Vanila JS", "Bootstrap"],
@@ -22,8 +27,8 @@ const data = [
   },
   {
     id: 2,
-    name: "Git Profile Finder",
-    img: "https://alamin-cse.netlify.app/img/portfolio/large/git/2.png",
+    name: 'Git Profile Finder App',
+    img: profilefind,
 
     brief:
       "This Project Created by ReactJs which able to find out git user profile by there userName",
@@ -33,7 +38,7 @@ const data = [
   },
   {
     id: 3,
-    img: "https://alamin-cse.netlify.app/img/portfolio/large/tasty/2.png",
+    img:Resturant,
     name: "Resturant Web Template",
     brief: "Responsive Landing page Resturant",
     tech: ["HTML", "CSS", "Vanila JS", "Bootstrap"],
@@ -42,8 +47,8 @@ const data = [
   },
   {
     id: 4,
-    img: "https://alamin-cse.netlify.app/img/portfolio/thumb/project-2.png",
-    name: "coffee Shop Responsive Design",
+    img: cofee,
+    name: "Coffee Shop Responsive Design",
     brief:
       "Simple Design project. Basically this site based on a coffee shop webpage. ",
     tech: ["HTML", "CSS", "Vanila JS", "Bootstrap", "Jquery"],

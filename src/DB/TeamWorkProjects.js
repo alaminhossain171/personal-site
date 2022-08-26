@@ -1,4 +1,7 @@
 import Superstar from "../assets/projects/HelloSuperstars.png";
+import Mges from '../assets/projects/MGES.png';
+import visacovid from '../assets/projects/VisaCovid.png';
+import happy from '../assets/projects/HappyCenter.png'
 const dataTeam = [
   {
     id: 1,
@@ -13,7 +16,7 @@ const dataTeam = [
   {
     id: 2,
     name: "Happy Center",
-    img: Superstar,
+    img: happy,
     brief:
       "Happy Centre is working on behalf of the Bangladesh Embassy inKuwait to provide passport and legalization services for the Bangladeshi workers in Kuwait. Happy Centre is one of the most established names in Kuwait",
     tech: ["HTML", "CSS", "Js", "Jquery", "Laravel"],
@@ -23,7 +26,7 @@ const dataTeam = [
   {
     id: 3,
     name: "Migration Governance Eco-system ",
-    img: Superstar,
+    img: Mges,
     brief:
       "A foreign employee recruitment and management System. MGES is a Bangladeshi-owned company that is active in the field of information technology with numerous years of experience.",
     tech: ["HTML", "CSS", "Js", "Jquery", "Laravel"],
@@ -33,7 +36,7 @@ const dataTeam = [
   {
     id: 4,
     name: "Visa Covid (Visa processing system)",
-    img: Superstar,
+    img: visacovid,
     brief: "Visa processing System . During Pendamic situation..",
     tech: ["HTML", "CSS", "Js", "Context API", "Jquery", "Laravel"],
     live: "https://visacovid.xyz/",

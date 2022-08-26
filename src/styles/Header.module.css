@@ -2,7 +2,12 @@
   background-color: #0b1322;
   border-bottom: 0.5px solid #1d2533;
 }
-
+.HeadDarkBg{
+  background-color: #0b1322;
+}
+.HeadLightBg{
+  background-color: #ffffff;
+}
 .HeaderLight {
   background-color: #ffffff;
   border-bottom: 0.5px solid #eaeef2;

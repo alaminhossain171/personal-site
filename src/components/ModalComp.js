@@ -27,7 +27,7 @@ export default function ModalComp(props) {
           <div>
             <img
               src={img}
-              style={{ height: 160, width: "100%" }}
+              style={{ height: 290, width: "100%" }}
               className="img-fluid"
               alt=""
             />
@@ -42,12 +42,12 @@ export default function ModalComp(props) {
           </div>
           <div className="my-1">
             {live && (
-              <a href={live} className="btn btn-primary btn-sm mx-1">
+              <a href={live} target={'_blank'} className="btn btn-primary btn-sm mx-1" rel="noreferrer">
                 Live Link
               </a>
             )}
             {git && (
-              <a href={git} className="btn btn-primary btn-sm mx-1">
+              <a href={git}  target={'_blank'} className="btn btn-primary btn-sm mx-1"  rel="noreferrer">
                 Git Link
               </a>
             )}

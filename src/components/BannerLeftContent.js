@@ -1,5 +1,8 @@
 import { Animated } from "react-animated-css";
+
+
 function BannerLeftContent() {
+
   return (
     <Animated
       animationIn="bounceInLeft"
@@ -29,8 +32,9 @@ function BannerLeftContent() {
           listen to music.
         </p>
 
-        <button className={`btn btn-primary my-3`}>See my CV</button>
-        <button className={`btn btn-primary my-3 mx-2`}>Get in Touch</button>
+        <button className={`btn btn-sm btn-primary my-3`}>See my resume</button>
+       
+       
       </div>
     </Animated>
   );

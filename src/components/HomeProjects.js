@@ -1,5 +1,6 @@
 import React from "react";
 import { BiRightArrow } from "react-icons/bi";
+import { Link } from "react-router-dom";
 import data from "../DB/HomeProjects";
 import ContentTitle from "./ContentTitle";
 import HomeProjectCard from "./HomeProjectCard";
@@ -28,10 +29,13 @@ export default function HomeProjects() {
           </div>
         </div>
         <div className="text-center">
+          <Link to={'/projects'}>
           <button className="btn btn-outline-primary">
             See More
             <BiRightArrow />
           </button>
+          </Link>
+        
         </div>
       </div>
     </>

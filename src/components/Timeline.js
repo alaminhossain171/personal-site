@@ -1,30 +1,32 @@
 import React, { useState } from "react";
 import { FaUserGraduate } from "react-icons/fa";
 import { MdWorkOutline } from "react-icons/md";
+import { useTheme } from "../context/ThemeContext";
 import Styles from "../styles/Timeline.module.css";
 import ContentTitle from "./ContentTitle";
 import Education from "./Education";
 import WorkExp from "./WorkExp";
 function Timeline() {
   const [data, setData] = useState("work");
+  const { isDarkMode,  } = useTheme();
 
   return (
     <>
       <ContentTitle title={"Timeline"} />
       <div className="my-4">
-        <div className="card CardBg">
+        <div className={`card ${isDarkMode?'LightCard':'DarkCard'}`}>
           <div className="row my-4">
             <div className="col-sm-12 col-md-3">
               <div className={`w-100 position-relative h-100`}>
                 <div className="timeline-header">
                   <div className="w-75 mx-auto ">
                     <div
-                      style={{ backgroundColor: "#1A375C" }}
+                      style={{ backgroundColor: `${isDarkMode?'#F0F7FF':"#0F172A"}`,border:'none' }}
                       onClick={() => setData("work")}
                       className={
                         data === "work"
                           ? `btn btn-secondary btn-sm w-100 text-info btn-res`
-                          : `btn btn-secondary btn-sm w-100 text-light btn-res`
+                          : `btn btn-secondary btn-sm w-100 ${isDarkMode?'text-dark':'text-light'} btn-res`
                       }
                     >
                       <span
@@ -33,7 +35,7 @@ function Timeline() {
                       >
                         <MdWorkOutline
                           size={20}
-                          color={data === "work" ? `#33b5e5` : "white"}
+                          color={data === "work" ? `#33b5e5` : `${isDarkMode?'text-dark':'text-light'}`}
                         />
                       </span>{" "}
                       Work Experience
@@ -41,12 +43,12 @@ function Timeline() {
                   </div>
                   <div className="w-75 mx-auto ">
                     <div
-                      style={{ backgroundColor: "#1A375C" }}
+                     style={{ backgroundColor: `${isDarkMode?'#F0F7FF':"#0F172A"}`,border:'none' }}
                       onClick={() => setData("education")}
                       className={
                         data === "education"
                           ? `btn btn-secondary btn-sm w-100 text-info btn-res mt-lg-3 mt-md-3`
-                          : `btn btn-secondary btn-sm w-100 text-light btn-res mt-lg-3 mt-md-3`
+                          : `btn btn-secondary btn-sm w-100 ${isDarkMode?'text-dark':'text-light'} btn-res mt-lg-3 mt-md-3`
                       }
                     >
                       <span
@@ -55,7 +57,7 @@ function Timeline() {
                       >
                         <FaUserGraduate
                           size={20}
-                          color={data === "education" ? `#33b5e5` : "white"}
+                          color={data === "education" ? `#33b5e5` : `${isDarkMode?'text-dark':'text-light'}`}
                         />
                       </span>{" "}
                       Education
@@ -63,14 +65,7 @@ function Timeline() {
                   </div>
                 </div>
                 <div className={`${Styles.timeLineActivity} display-sm`}>
-                  <div
-                    className="display-sm"
-                    style={{
-                      background: "#0DCAF0",
-                      height: "35px",
-                      marginTop: `${data === "work" ? "0vw" : "3.5vw"}`,
-                    }}
-                  ></div>
+                 
                 </div>
               </div>
             </div>

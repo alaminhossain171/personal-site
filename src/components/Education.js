@@ -3,8 +3,8 @@ function EducationInfo({ className, institute, time, subject }) {
   return (
     <div className={className}>
       <h6 className="">{institute}</h6>
-      <h6 className="text-muted ">{subject}</h6>
-      <h6 className="text-muted">{time}</h6>
+      <p className="text-muted m-0 p-0">{subject}</p>
+      <p className="text-muted m-0 p-0">{time}</p>
     </div>
   );
 }

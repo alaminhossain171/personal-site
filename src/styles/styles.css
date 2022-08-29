@@ -36,24 +36,16 @@ body {
   background-color: #f3f6f9;
   color: black;
 }
-.CardBg {
-  background: rgba(74, 144, 226, 0.25);
-  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px); */
+.DarkCard {
+  background: #182133;
   border-radius: 5px;
-  /* text-shadow: 2px 0px 3px #54547983; */
-  /* cursor: pointer; */
 }
-/* .work-details span {
-  letter-spacing: 2px;
-  line-height: 2px;
-} */
-/* .left-content-font {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 200;
-  letter-spacing: 1px;
-} */
+.LightCard{
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
+
 .slick-slider .slick-slide {
   padding: 0 15px;
 }
@@ -61,21 +53,7 @@ body {
   height: 280px !important;
   overflow-y: scroll;
 }
-/* ::-webkit-scrollbar {
-  width: 5px;
-  height: 10px;
-}
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background: #0d6efd;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-} */
 .icon-hover:hover {
   color: #0dacd0 !important;
 }

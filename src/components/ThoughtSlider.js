@@ -1,8 +1,10 @@
 import React from "react";
 import { AiTwotoneStar } from "react-icons/ai";
 import Slider from "react-slick";
+import { useTheme } from "../context/ThemeContext";
 import data from "../DB/Thoughts";
 export default function ThoughtSlider() {
+  const {isDarkMode}=useTheme()
   var settings = {
     dots: true,
     infinite: true,
@@ -43,7 +45,7 @@ export default function ThoughtSlider() {
       <Slider {...settings}>
         {data.map((item) => {
           return (
-            <div className="card CardBg cngCard">
+            <div  className={`${isDarkMode?'LightCard shadow cngCard':'DarkCard shadow cngCard'}`}>
               <div className="p-2">
                 <span className="d-flex flex-row justify-content-end">
                   {[1, 2, 3, 4, 5].map((star) => {

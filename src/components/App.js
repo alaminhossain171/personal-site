@@ -11,6 +11,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Layout from "./Layout";
 
+
 function App() {
   const { isDarkMode } = useTheme();
   return (
@@ -32,7 +33,9 @@ function App() {
               <Contact title="Contact | Page" />
             </Route>
           </Switch>
+       
         </Layout>
+       
 
         <Footer />
       </div>

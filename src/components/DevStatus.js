@@ -2,15 +2,17 @@ import React from "react";
 import { BiCodeAlt } from "react-icons/bi";
 import { BsBookmarkCheck, BsGithub } from "react-icons/bs";
 import { RiUserSettingsLine } from "react-icons/ri";
+import { useTheme } from "../context/ThemeContext";
 import Styles from "../styles/DevStatus.module.css";
 import ContentTitle from "./ContentTitle";
 import Status from "./Status";
 
 export default function DevStatus() {
+  const { isDarkMode } = useTheme();
   return (
     <div className="mt-4">
       <ContentTitle title={"My Dev Stats"} />
-      <div className={`card my-3 CardBg`}>
+      <div className={`card my-3 ${!isDarkMode?"DarkCard":'lightCard'}`}>
         <div className={`row my-2`}>
           <Status
             icon={<BiCodeAlt size={30} className={Styles.statusIcon} />}

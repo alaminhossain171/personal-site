@@ -12,8 +12,8 @@ const data = [
     brief:
       "A Quiz app which takes quiz on basic javascript question. (Ref: Learn with sumit yt)",
     tech: ["HTML", "CSS", "Vanila JS", "Bootstrap"],
-    live: "https://alaminhossain171.github.io/JS--Sentence-detector/",
-    git: "https://github.com/alaminhossain171/JS--Sentence-detector",
+    live: "https://quiz-app-react07.netlify.app/",
+    git: "https://github.com/alaminhossain171/react_firebase_quiz_app",
   },
   {
     id: 1,

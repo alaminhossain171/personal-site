@@ -1,14 +1,18 @@
-.CardBg {
-  background: rgba(74, 144, 226, 0.25);
-  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
-  /* backdrop-filter: blur(9px); */
-  /* -webkit-backdrop-filter: blur(9px); */
+.CardBgDark {
+  background: #182133;
+
   border-radius: 5px;
-  /* text-shadow: 2px 0px 3px #54547983; */
+
   cursor: pointer;
 }
+.CardBgLight {
+  background: #ffff;
 
-.CardBg::after {
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+.CardBgDark::after {
   display: block;
   content: "";
   border-bottom: 2px solid #64ffb9;
@@ -17,7 +21,20 @@
   transform-origin: 100% 50%;
 }
 
-.CardBg:hover::after {
+.CardBgDark:hover::after {
+  transform: scaleX(1);
+  transform-origin: 0 50%;
+}
+.CardBgLight::after {
+  display: block;
+  content: "";
+  border-bottom: 2px solid #64ffb9;
+  transform: scaleX(0);
+  transition: transform 0.35s ease-in-out;
+  transform-origin: 100% 50%;
+}
+
+.CardBgLight:hover::after {
   transform: scaleX(1);
   transform-origin: 0 50%;
 }

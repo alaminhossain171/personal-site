@@ -1,10 +1,12 @@
+import { useTheme } from "../context/ThemeContext";
 import FooterCenterContent from "./FooterCenterContent";
 import FooterLeftContent from "./FooterLeftContent";
 import FooterRightContent from "./FooterRightContent";
 
 function Footer() {
+  const {isDarkMode}=useTheme()
   return (
-    <div className={`CardBg mt-5 p-2`}>
+    <div className={`${isDarkMode?'LightCard':'DarkCard'} shadow mt-5 p-2`}>
       <footer>
         <div className="container ">
           <div className="row">

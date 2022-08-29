@@ -1,4 +1,5 @@
 import { Animated } from "react-animated-css";
+import { Link } from "react-router-dom";
 
 
 function BannerLeftContent() {
@@ -31,9 +32,10 @@ function BannerLeftContent() {
           technologies. As of my hobbies, I prefer reading books, travel, and
           listen to music.
         </p>
-
-        <button className={`btn btn-sm btn-primary my-3`}>See my resume</button>
-       
+<a className={`btn btn-sm btn-primary my-3`} href="https://drive.google.com/drive/folders/1QFvECgzpuuSC-cOlBbQ-z_8deyi7tLSk?usp=sharing" target={'_blank'} rel="noreferrer">See my cv</a>
+     
+      <Link to='/contact'>
+      <button className={`btn btn-sm btn-primary my-3 mx-2`}>Get in touch</button></Link>
        
       </div>
     </Animated>

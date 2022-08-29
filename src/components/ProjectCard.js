@@ -1,13 +1,15 @@
 import React from "react";
+import { useTheme } from "../context/ThemeContext";
 import ModalComp from "./ModalComp";
 
 export default function ProjectCard({ name, brief, tech, live, git, img }) {
   const [modalShow, setModalShow] = React.useState(false);
+  const {isDarkMode}=useTheme()
   return (
     <>
       {" "}
       <div className="col-sm-12 col-md-6 col-lg-4 my-3">
-        <div className="card CardBg">
+        <div className={`${isDarkMode?'LightCard shadow':'DarkCard shadow'}`}>
           <div className="card-body">
             <div
               style={{

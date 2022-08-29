@@ -1,11 +1,13 @@
 import React from "react";
 import { MdLink } from "react-icons/md";
+import { useTheme } from "../context/ThemeContext";
 
 export default function HomeProjectCard({ title, details, technology, url }) {
+  const {isDarkMode}=useTheme()
   return (
     <>
       {" "}
-      <div className="card CardBg p-2 w-100">
+      <div className={`${isDarkMode?'LightCard shadow p-2 w-100':'DarkCard shadow p-2 w-100'}`} >
         <div className="card-head d-flex flex-row justify-content-end">
           <a href={url} target="_blank" rel="noreferrer">
             <div

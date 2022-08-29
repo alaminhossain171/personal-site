@@ -12,8 +12,9 @@
 } */
 
 .statusContainer {
-    border-right: 1px solid #d0dcf233;
+    border-right: 2px solid #d0dcf233;
 }
+
 
 .statusIcon{
     opacity: 0.2;
